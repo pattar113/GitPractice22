@@ -13,12 +13,18 @@ public class timeFormatting {
 
         System.out.println(time1.format(dtf));
 
-        LocalTime time2 = LocalTime.of(12,0);
+        LocalTime time2 = LocalTime.of(00,0);
 
         System.out.println(time2.format(dtf));
 
        boolean result1= time1.isAfter(time2);
         System.out.println(result1);
+
+       DateTimeFormatter tf = DateTimeFormatter.ofPattern("hh:mm a");
+       LocalTime tt=LocalTime.of(22,33);
+        System.out.println(tt.format(tf));
+
+
 
 
 
